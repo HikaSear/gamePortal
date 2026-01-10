@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iron Portal</title>
+    <title>IronPortal</title>
     <link rel="icon" href="img/favicon.png">
     <style>
         body {
@@ -14,6 +14,12 @@
             padding-top: 10%;
             margin: 0;
             overflow-x: hidden;
+        }
+
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #0b0b0b;
         }
         
         .logo-container img {
@@ -26,7 +32,6 @@
         h1 {
             font-size: 3em;
             letter-spacing: 3px;
-            text-transform: uppercase;
             margin-bottom: 30px;
         }
         
@@ -55,12 +60,14 @@
     </style>
 </head>
 <body>
-<div class="logo-container">
-    <img src="img/favicon.png" alt="Iron Portal Logo">
-</div>
-<h1>Iron Portal</h1>
-<p>Приготовься отправиться в путешествие сквозь пространство и время вместе с главным героем, Тиной, оказавшись внутри заснеженной секретной лаборатории Советского Союза эпохи холодной войны.</p>
-<button onclick="downloadGame()">Играть</button>
+    <div class="logo-container">
+        <img src="img/favicon.png" alt="Iron Portal Logo">
+    </div>
+    <div class="container">
+        <h1>IronPortal</h1>
+        <p>Приготовься отправиться в путешествие сквозь пространство и время вместе с главным героем, Тиной, оказавшись внутри заснеженной секретной лаборатории Советского Союза эпохи холодной войны.</p>
+        <button onclick="downloadGame()">Играть</button>
+    </div>
 
 <script>
     function downloadGame() {
