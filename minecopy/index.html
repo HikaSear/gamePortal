@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IronPortal</title>
+    <link rel="icon" href="img/favicon.png">
+    <style>
+        body {
+            background-color: #0b0b0b;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding-top: 10%;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .container {
+            padding-left: 10px;
+            padding-right: 10px;
+            background-color: #0b0b0b;
+        }
+        
+        .logo-container img {
+            width: 150px;
+            height: auto;
+            border-radius: 30px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 3em;
+            letter-spacing: 3px;
+            margin-bottom: 30px;
+        }
+        
+        p {
+            max-width: 600px;
+            margin: 0 auto 30px;
+            line-height: 1.6;
+        }
+        
+        button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            cursor: pointer;
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+            border-radius: 30px;
+            transition: all 0.3s ease-in-out;
+        }
+        
+        button:hover {
+            background-color: white;
+            color: #0b0b0b;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <img src="img/favicon.png" alt="Iron Portal Logo">
+    </div>
+    <div class="container">
+        <h1>IronPortal</h1>
+        <p>Приготовься отправиться в путешествие сквозь пространство и время вместе с главным героем, Тиной, оказавшись внутри заснеженной секретной лаборатории Советского Союза эпохи холодной войны.</p>
+        <button onclick="downloadGame()">Играть</button>
+    </div>
+
+<script>
+    function downloadGame() {
+        window.location.href = 'game.zip';
+    }
+</script>
+</body>
+</html>
