@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OpenWorld</title>
+    <title>OpenWorld Game - Переезд</title>
     <style>
-        /* Общие стили фона */
+        /* Глубокий темно-зеленый фон всей страницы */
         body {
             margin: 0;
             padding: 0;
@@ -13,57 +13,76 @@
             justify-content: center;
             align-items: center;
             min-height: 100vh;
-            background-color: #000d01; /* Светло-зеленый фон страницы */
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0a1a0a; /* Почти черный с зеленым отливом */
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
         }
 
-        /* Контейнер с пропорциями 16:9 */
-        .ratio-container {
+        /* Контейнер 16:9 в стиле Glassmorphism */
+        .card {
             width: 90%;
-            max-width: 800px;
+            max-width: 850px;
             aspect-ratio: 16 / 9;
-            background-color: #2e7d32;
-            border-radius: 20px;
+            background: linear-gradient(145deg, #142e14, #0d1f0d);
+            border: 1px solid #1e461e;
+            border-radius: 24px;
             display: flex;
             justify-content: center;
             align-items: center;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-            border: 2px solid #a5d6a7;
-            padding: 20px;
+            padding: 40px;
             box-sizing: border-box;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
             text-align: center;
         }
 
-        /* Стиль текста */
-        .content {
-            color: #fcfcfc; /* Темно-зеленый текст */
-            font-size: clamp(1.2rem, 4vw, 2rem);
-            line-height: 1.4;
-            font-weight: 500;
+        /* Текст с легким свечением */
+        .message {
+            color: #e0eee0;
+            font-size: clamp(1.1rem, 3.5vw, 1.8rem);
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+            max-width: 80%;
         }
 
-        /* Стиль ссылки */
-        .tg-link {
-            color: #4caf50;
+        /* Ссылка на бота в неоновом стиле */
+        .bot-link {
+            color: #4ade80; /* Ярко-зеленый акцент */
             text-decoration: none;
-            border-bottom: 2px solid #4caf50;
-            transition: all 0.3s ease;
-            font-weight: bold;
+            font-weight: 700;
+            padding: 2px 8px;
+            border-radius: 6px;
+            background: rgba(74, 222, 128, 0.1);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            white-space: nowrap;
         }
 
-        .tg-link:hover {
-            color: #1b5e20;
-            border-bottom-color: #1b5e20;
-            background-color: #f1f8e9;
+        .bot-link:hover {
+            background: rgba(74, 222, 128, 0.2);
+            color: #ffffff;
+            box-shadow: 0 0 15px rgba(74, 222, 128, 0.4);
+            transform: translateY(-2px);
+        }
+
+        /* Декоративный элемент (точка) */
+        .status-dot {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            background-color: #4ade80;
+            border-radius: 50%;
+            margin-right: 10px;
+            box-shadow: 0 0 10px #4ade80;
         }
     </style>
 </head>
 <body>
 
-    <div class="ratio-container">
-        <div class="content">
-            Друзья, взаимодействие с проектом через сайт прекращено.<br>
-            Пожалуйста, используйте<br><a href="https://t.me/openworld_gamebot" class="tg-link">телеграм бота</a>
+    <div class="card">
+        <div class="message">
+            <p>
+                Друзья, взаимодействие с проектом через сайт прекращено. <br>
+                Пожалуйста, используйте 
+                <a href="https://t.me/openworld_gamebot" class="bot-link">телеграм бота</a>
+            </p>
         </div>
     </div>
 
